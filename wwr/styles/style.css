@@ -222,6 +222,35 @@ nav {
     transform: scale(1.1);
     }
 
+/* The Rivers page CSS starts from here. */
+#rivers-grid {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    justify-items: center;
+    background-color: #7ab7d0;
+    gap: 50px;
+    margin-top: 50px;
+  
+    }
+
+.rivers-img { 
+    width: 100%; 
+    border: 10px solid #e9c46a;
+    box-shadow: 5px 5px 10px #082d47;
+    margin-left: 100px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    }
+
+.rivers-text-box {
+    width: 85%;
+    margin-top: 50px;
+    
+    
+}
+
+/* The Rivers page CSS ends here. */
+
 @media screen and (max-width: 900px) {
     #hero, .home-grid {
         display: block;
