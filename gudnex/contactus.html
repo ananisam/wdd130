@@ -18,6 +18,12 @@
                 <a href="index.html">Home</a>
                 <a href="ourservices.html">Our Services</a>
                 <a href="contactus.html">Contact Us</a>
+                <div class="search-container">
+                    <form action="/action_page.php">
+                      <input type="text" placeholder="Search.." name="search">
+                      <button type="submit">Submit</button>
+                    </form>
+                </div>
             </nav>
         </header>
         
@@ -38,7 +44,7 @@
             </div>
             <div class="form-container">
                 <h2 class="form-heading">Send Us Message</h2>
-                <form action="/my-handling-form-page" method="post">
+                <form class="contact-form" action="/my-handling-form-page" method="post">
                     <ul>
                         <li>
                             <label for="name">Your Name:</label>
