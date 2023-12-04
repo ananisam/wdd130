@@ -108,7 +108,7 @@ input[type=text] {
   padding: 6px;
   margin-top: 8px;
   font-size: 17px;
-  border: none;
+  
 }
 
 .search-container button {
@@ -263,24 +263,36 @@ nav {
 /* The Contact Us page CSS starts here. */
 #contactus-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-items: center;
-    grid-column-gap: 20px;  
+    grid-template-columns: 1fr 4fr 5fr;
+    grid-column-gap: 20px;
 }
 .contactus-img {
     width: 100%; 
-    grid-column: 1/3; 
+    grid-column: 1/4;
   } 
-#feedback {
-    grid-column: 1/3;
-}
+
 
 .get-in-touch-container {
     margin-top: 50px;
+    margin-bottom: 50px;
+    grid-column: 1/3;
+    margin-left: 105px;
+ 
+}
+
+.get-in-touch-img {
+  grid-column: 1/2;
+  margin-left: 100px;
+  width: 40px;
+  padding-top: 20px;
 }
 
 .form-container {
     margin-top: 50px;
+    margin-right: 80px;
+    grid-column: 3/4;
+    grid-row: 2/7;
+    place-self: center;
 }
 
 .form-heading {
@@ -325,13 +337,13 @@ nav {
     box-sizing: border-box;
   
     /* Match form field borders */
-    border: 1px solid #999;
+    border: 1px solid #396e94;
   }
   
   input:focus,
   textarea:focus {
     /* Additional highlight for focused elements */
-    border-color: #000;
+    border-color: #000000;
   }
   
   textarea {
@@ -341,7 +353,6 @@ nav {
     /* Provide space to type some text */
     height: 10em;
   }
- 
   
   button {
     /* This extra margin represent roughly the same space as the space
@@ -351,19 +362,4 @@ nav {
     font-size: large;
   }
   
-  #feedback {
-    background-color: antiquewhite;
-    position: absolute;
-    top: 0%;
-    left: 0;
-    right: 0;
-    padding: .5em;
-    text-align: center;
-    /* make this element invisible until we are ready for it */
-    display: none;      
-}
-.moveDown {
-    margin-top: 3em;
-}
-
 /* The Contact Us page CSS ends here. */
